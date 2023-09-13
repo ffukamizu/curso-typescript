@@ -3,7 +3,7 @@ function multiply(num1: number, num2: number) {
 }
 
 function sum(num1: number, num2: number) {
-    return num1 * num2;
+    return num1 + num2;
 }
 
 function isEven(num: number) {
@@ -18,10 +18,11 @@ function showanswer(answer: number) {
     }
 }
 
-const answer1 = multiply(3, 7);
-
-showanswer(answer1);
-
-const answer2 = sum(6, 5);
-
-showanswer(answer2);
+() => {
+    const num1: number = Number(prompt('First Number'));
+    const num2: number = Number(prompt('Second Number'));
+    if (isNaN(num1) || isNaN(num2)) return alert('Type a number');
+    let answer = sum(num1, num2);
+    answer += multiply(1, 2);
+    showanswer(answer);
+};
