@@ -6,7 +6,7 @@ const game: Game = {
         name: 'Playstation',
     },
     title: 'The Last Of Us',
-    publiser: 'Naughty Dog',
+    publisher: 'Naughty Dog',
     launch: '2013-06-14',
 };
 
